@@ -47,7 +47,9 @@ li {
   min-height: 100%;
   font-size: var(--body-font-size);
   line-height: var(--body-line-height);
-  font-family: var(--font-family, sans-serif);
+  // font-family: var(--font-family-primary);
+  font-family: "Poppins";
+  font-weight: 400;
 }
 
 img {
@@ -101,8 +103,8 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: 1440px;
-  padding: 0 20px;
+  max-width: var(--container-width);
+  padding: var(--container-paddings);
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -150,6 +152,35 @@ a {
   overflow: hidden;
 }
 
-.second_div {
-  @include adaptiveValue(font-size, 48, 12, 1920, 1366, 1);
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  width: 100%;
+  border-radius: var(--primary-border-radius);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: var(--transition-delay) color ease, var(--transition-delay) background-color ease;
+
+  @media (min-width: 576px) {
+    width: unset;
+    padding: 22px 16px;
+    min-width: 310px;
+    max-width: 420px;
+  }
+
+  @include hover {
+    background: red;
+  }
+
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  @include hover {
+    background-color: var(--primary-dark-color);
+  }
 }
