@@ -1,0 +1,51 @@
+.grid {
+  display: grid;
+}
+
+.grid-col-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: end;
+}
+
+.items-start {
+  align-items: start;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.centered {
+  text-align: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-grid-start {
+  justify-items: start;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
