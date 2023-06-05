@@ -84,7 +84,7 @@
 // import Tab from "./functions/tabs";
 
 // burger
-// import { burger } from "./functions/burger";
+import { burger } from "./functions/burger";
 
 // splide
 // import Splide from "@splidejs/splide";

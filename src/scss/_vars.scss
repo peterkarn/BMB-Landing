@@ -26,6 +26,7 @@
 
   --primary-gap: 30px;
   --secondary-gap: 15px;
+  --small-gap: 10px;
 
   //style variables
 
@@ -33,5 +34,10 @@
   --container-width: 1240px;
   --container-paddings: 0 25px;
 
-  --transition-delay: 0.3s;
+  --transition-duration: 0.3s;
+
+  //z indexes
+
+  --lowest-elements: 1;
+  --hightest-elements: 5;
 }

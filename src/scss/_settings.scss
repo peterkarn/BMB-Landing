@@ -47,9 +47,12 @@ li {
   min-height: 100%;
   font-size: var(--body-font-size);
   line-height: var(--body-line-height);
-  // font-family: var(--font-family-primary);
   font-family: "Poppins";
   font-weight: 400;
+
+  @media orientation and (landscape) {
+    background-color: red;
+  }
 }
 
 img {
@@ -157,30 +160,39 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  transition: var(--transition-duration) color ease, var(--transition-duration) background-color ease, var(--transition-duration) border ease;
+}
+
+.btn-primary {
   padding: 16px;
   width: 100%;
   border-radius: var(--primary-border-radius);
   text-transform: uppercase;
   font-weight: 600;
-  transition: var(--transition-delay) color ease, var(--transition-delay) background-color ease;
 
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     width: unset;
     padding: 22px 16px;
     min-width: 310px;
     max-width: 420px;
   }
-
-  @include hover {
-    background: red;
-  }
-
 }
 
-.btn-primary {
+.btn-main {
   background-color: var(--primary-color);
   color: var(--white-color);
   @include hover {
     background-color: var(--primary-dark-color);
+  }
+}
+
+.btn-outline {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+
+  @include hover {
+    color: var(--primary-dark-color);
+    border: 1px solid var(--primary-dark-color);
   }
 }
