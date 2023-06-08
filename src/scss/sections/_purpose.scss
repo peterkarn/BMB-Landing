@@ -1,0 +1,46 @@
+.purpose {
+  &__item {
+    @include adaptiveValue(padding-top, 24, 16, 1920, 360, 1);
+    @include adaptiveValue(padding-bottom, 24, 16, 1920, 360, 1);
+    @include adaptiveValue(padding-right, 24, 16, 1920, 360, 1);
+    @include adaptiveValue(padding-left, 24, 16, 1920, 360, 1);
+    min-height: 192px;
+    background-color: var(--primary-lighter-color);
+    row-gap: 40px;
+    grid-template-rows: max-content 1fr;
+  }
+
+  &__info {
+    row-gap: 5px;
+  }
+
+  &__img {
+    align-self: end;
+  }
+
+  &__inner {
+    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 312px), 1fr));
+    margin-bottom: 16px;
+
+    @media (min-width: 768px) {
+      gap: var(--primary-gap);
+    }
+  }
+
+  &__title {
+    @include adaptiveValue(margin-bottom, 32, 24, 1920, 360, 1);
+  }
+
+  &__notice {
+    @media (min-width: 576px) {
+      justify-items: center;
+    }
+    row-gap: 5px;
+    padding: 16px;
+  }
+
+  span {
+    color: var(--grey-color);
+  }
+}

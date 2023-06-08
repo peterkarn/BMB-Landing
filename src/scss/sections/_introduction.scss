@@ -31,6 +31,9 @@
 
 &__text {
   grid-column: unset;
+
+
+
   max-width: 500px;
   @media (min-width: 992px) {
     grid-column: span 4;
@@ -53,9 +56,9 @@
 
 &__title {
   grid-column: unset;
+
   @media (min-width: 992px) {
     grid-column: span 4;
-    padding-top: 20px;
     @include adaptiveValue(margin-bottom, 32, 24, 1920, 992, 1);
   }
 }
