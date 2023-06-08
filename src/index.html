@@ -1,85 +1,162 @@
 <!DOCTYPE html>
 <html lang="en" class="page">
-
-@include('partials/head.html')
-
-<body class="page__body">
+ @include('partials/head.html')
+ <body class="page__body">
   <div class="site-container">
-    @include('partials/header.html')
-    <main class="main">
-
-      <!-- introduction section -->
-
-      <section class="introduction">
-        <div class="container">
-          <div class="introduction__inner grid">
-              <h2 class="section-title introduction__title">
-                What is Be My Broker?
-              </h2>
-              <p class="introduction__text">BMB is a B2B booking platform for yacht owners and fleet operators to promote, manage and share information with brokers in real time.</p>
-              <button class="btn btn-primary btn-main introduction__btn">SIGN UP</button>
-            <div class="introduction__img ibg">
-              <img src="img/content/mockup.png" alt="Be My Broker Example">
-            </div>
-          </div>
+   @include('partials/header.html')
+   <main class="main">
+    <!-- introduction section -->
+    <section class="introduction">
+     <div class="container">
+      <div class="introduction__inner grid">
+       <h2 class="section-title introduction__title">
+        What is Be My Broker?
+       </h2>
+       <p class="introduction__text">BMB is a B2B booking platform for yacht owners and fleet operators to promote, manage and share information with brokers in real time.</p>
+       <button class="btn btn-primary btn-main introduction__btn">SIGN UP</button>
+       <div class="introduction__img ibg">
+        <img src="img/content/mockup.png" alt="Be My Broker Example">
+       </div>
+      </div>
+     </div>
+    </section>
+    <!-- introduction section -->
+    <!-- purpose section -->
+    <section class="purpose">
+     <div class="container">
+      <h2 class="purpose__title section-title">Booking platform for</h2>
+      <div class="purpose__inner grid">
+       <div class="purpose__item primary-item  grid rounded primary-border">
+        <div class="purpose__info">
+         <h3 class="purpose__subtitle section-subtitle">
+          Private owners
+         </h3>
+         <span>(1 boat)</span>
         </div>
-      </section>
-
-      <!-- introduction section -->
-
-      <!-- purpose section -->
-
-      <section class="purpose">
-        <div class="container">
-          <h2 class="purpose__title section-title">Booking platform for</h2>
-          <div class="purpose__inner grid">
-          <div class="purpose__item grid rounded primary-border">
-              <div class="purpose__info">
-                <h3 class="purpose__subtitle section-subtitle">
-                  Private owners
-                </h3>
-                <span>(1 boat)</span>
-              </div>
-            <img class="purpose__img" src="img/svg/one-boat.svg" alt="Three Boats">
-
-          </div>
-            <div class="purpose__item grid rounded primary-border">
-              <div class="purpose__info grid">
-                <h3 class="purpose__subtitle section-subtitle">
-                  Private owners
-                </h3>
-                <span>(1 boat)</span>
-              </div>
-              <img class="purpose__img" src="img/svg/three-boats.svg" alt="Three Boats">
-          </div>
-          <div class="purpose__item grid rounded primary-border">
-            <div class="purpose__info">
-              <h3 class="purpose__subtitle section-subtitle">
-                Private owners
-              </h3>
-            </div>
-            <img class="purpose__img" src="img/svg/cruise.svg" alt="Three Boats">
+        <img class="purpose__img" src="img/svg/one-boat.svg" alt="Three Boats">
+       </div>
+       <div class="purpose__item primary-item  grid rounded primary-border">
+        <div class="purpose__info grid">
+         <h3 class="purpose__subtitle section-subtitle">
+          Private owners
+         </h3>
+         <span>(1 boat)</span>
         </div>
+        <img class="purpose__img" src="img/svg/three-boats.svg" alt="Three Boats">
+       </div>
+       <div class="purpose__item primary-item  grid rounded primary-border">
+        <div class="purpose__info">
+         <h3 class="purpose__subtitle section-subtitle">
+          Private owners
+         </h3>
         </div>
-        <div class="purpose__notice grid primary-border rounded">
-          <h3 class="section-subtitle">
-            Brokers & Agencies
+        <img class="purpose__img" src="img/svg/cruise.svg" alt="Three Boats">
+       </div>
+      </div>
+      <div class="purpose__notice grid primary-border rounded">
+       <h3 class="section-subtitle">
+        Brokers & Agencies
+       </h3>
+       <span>Brokers & Agencies Brokers & Agencies</span>
+      </div>
+     </section>
+     <!-- purpose section -->
+     <!-- benefits section -->
+     <section class="benefits">
+      <div class="container">
+       <h2 class="benefits__title section-title">
+        Why choose our platform?
+       </h2>
+       <div class="benefits__head grid">
+        <div class="benefits__head-item grid">
+         <h3 class="benefits__subtitle section-subtitle">
+          Free for now!
+         </h3>
+         <p>
+          The platform is free for yacht owners and brokers. Yacht owners indicate the commission they will pay brokers for bringing clients.
+         </p>
+        </div>
+        <div class="benefits__head-item grid">
+         <h3 class="benefits__subtitle section-subtitle">
+          Security
+         </h3>
+         <p>
+          Owners provide boat ownership proof (Registration & Insurance); Agents provide registered charter agency proof (Website & Company details).
+         </p>
+        </div>
+        <div class="benefits__head-item grid">
+         <h3 class="benefits__subtitle section-subtitle">
+          Free API
+         </h3>
+         <p>
+          Free API available to link booking system with your website for real-time availability and easy booking process.
+         </p>
+        </div>
+       </div>
+       <div class="benefits__content grid">
+        <div class="benefits__content-inner grid">
+         <div class="benefits__block benefits__block-owners primary-item rounded primary-item primary-border grid">
+          <h3 class="benefits__block-title font-semibold">
+           For Owners
           </h3>
-          <span>Brokers & Agencies Brokers & Agencies</span>
+          <div class="benefits__block-content grid">
+            <div class="benefits__block-item grid">
+              <img class="benefits__icon" src="img/svg/small-boat.svg" alt="Small Boat">
+              <h4 class="benefits__block-subtitle font-semibold">
+               Increase sales
+              </h4>
+              <p>
+               Once the boat is placed on the platform, it will be seen by thousands of customers from booking websites
+              </p>
+             </div>
+             <div class="benefits__block-item grid">
+              <img class="benefits__icon" src="img/svg/clock.svg" alt="Clock">
+              <h4 class="benefits__block-subtitle font-semibold">
+               Save time
+              </h4>
+              <p>
+               Once the boat is placed on the platform, it will be seen by thousands of customers from booking websites
+              </p>
+             </div>
+          </div>
+          <a href="#" class="benefits__link uppercase font-semibold benefits__link-owners">Learn More</a>
+         </div>
+         <div class="benefits__block benefits__block-agents  primary-item rounded primary-item primary-border grid">
+          <h3 class="benefits__block-title font-semibold">
+           For Owners
+          </h3>
+          <div class="benefits__block-content grid">
+            <div class="benefits__block-item grid">
+              <img class="benefits__icon" src="img/svg/shield.svg" alt="Shield">
+              <h4 class="benefits__block-subtitle font-semibold">
+               Increase sales
+              </h4>
+              <p>
+               Once the boat is placed on the platform, it will be seen by thousands of customers from booking websites
+              </p>
+             </div>
+             <div class="benefits__block-item grid">
+              <img class="benefits__icon" src="img/svg/data.svg" alt="Data">
+              <h4 class="benefits__block-subtitle font-semibold">
+               Save time
+              </h4>
+              <p>
+               Once the boat is placed on the platform, it will be seen by thousands of customers from booking websites
+              </p>
+             </div>
+          </div>
+          <a href="#" class="benefits__link benefits__link-agents uppercase font-semibold">Learn More</a>
+         </div>
         </div>
-      </section>
-
-      <!-- purpose section -->
-
-
-      <!-- purpose section -->
-
-      <!-- purpose section -->
-
+        <a href="#" class="benefits__btn btn btn-primary btn-main">
+          SIGN UP
+        </a>
+       </div>
+      </div>
+     </section>
+     <!-- benefits section -->
     </main>
-
     @include('partials/footer.html')
-  </div>
-</body>
-
-</html>
+   </div>
+  </body>
+ </html>

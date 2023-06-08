@@ -57,3 +57,19 @@
 .primary-border {
   border: 1px solid var(--primary-extra-light-color);
 }
+
+.rounded-left {
+  border-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.rounded-right {
+  border-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

@@ -27,13 +27,14 @@
   //spacing variables
 
   --primary-gap: 30px;
-  --secondary-gap: 15px;
+  --secondary-gap: 16px;
   --small-gap: 10px;
+  --extra-small-gap: 5px;
 
   //style variables
 
   --primary-border-radius: 8px;
-  --container-width: 1240px;
+  --container-width: 1340px;
   --container-paddings: 0 25px;
 
   --transition-duration: 0.3s;
@@ -41,5 +42,5 @@
   //z indexes
 
   --lowest-elements: 1;
-  --hightest-elements: 5;
+  --highest-elements: 5;
 }

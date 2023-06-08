@@ -198,10 +198,24 @@ a {
 .section-title {
   font-weight: 600;
   font-size: var(--h2-font-size);
+  @include adaptiveValue(margin-bottom, 32, 24, 1920, 360, 1);
+
 }
 
 .section-subtitle {
   font-size: var(--h3-font-size);
   font-weight: 600;
   color: var(--primary-color);
+}
+
+.primary-item {
+  @include adaptiveValue(padding-top, 24, 16, 1920, 360, 1);
+  @include adaptiveValue(padding-bottom, 24, 16, 1920, 360, 1);
+  @include adaptiveValue(padding-right, 24, 16, 1920, 360, 1);
+  @include adaptiveValue(padding-left, 24, 16, 1920, 360, 1);
+  background-color: var(--primary-lighter-color);
+}
+
+section:not(:last-of-type) {
+  @include adaptiveValue(padding-bottom, 100, 64, 1920, 360, 1);
 }
