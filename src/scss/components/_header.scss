@@ -161,26 +161,8 @@
   }
 
   &__link {
-    position: relative;
-    padding-bottom: 3px;
-    display: inline-block;
-    font-weight: 600;
     &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      width: 0%;
-      height: 2px;
       background-color: var(--dark-color);
-      bottom: 0;
-      will-change: width;
-      transition: var(--transition-duration) width ease;
-    }
-
-    @include hover {
-      &::before {
-        width: 100%;
-      }
     }
   }
 }

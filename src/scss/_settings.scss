@@ -216,6 +216,50 @@ a {
   background-color: var(--primary-lighter-color);
 }
 
-section:not(:last-of-type) {
+section {
   @include adaptiveValue(padding-bottom, 100, 64, 1920, 360, 1);
+}
+
+.nav-link {
+  padding-bottom: 3px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.primary-hover {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    will-change: width;
+    transition: var(--transition-duration) width ease;
+  }
+
+  @include hover {
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &-light {
+    &::before {
+      background-color: var(--white-color);
+    }
+  }
+
+  &-dark {
+    &::before {
+      background-color: var(--dark-color);
+    }
+  }
+
+  &-primary-color {
+    &::before {
+      background-color: var(--primary-color);
+    }
+  }
 }

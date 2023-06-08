@@ -1,0 +1,114 @@
+.footer {
+  padding: 48px 0;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+
+  &__inner {
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: var(--secondary-gap);
+  }
+
+  &__list {
+    flex-wrap: wrap;
+    grid-column: 1/13;
+    column-gap: var(--secondary-gap);
+    flex-direction: column;
+    row-gap: 8px;
+
+    @media (min-width: 992px) {
+      row-gap: var(--small-gap);
+      grid-column: 1/7;
+    }
+
+    @media (min-width: 576px) {
+      flex-direction: row;
+    }
+  }
+
+  &__link {
+    font-size: 24px;
+    &::before {
+      background-color: var(--white-color);
+    }
+  }
+
+  &__socials {
+    column-gap: 8px;
+    flex-wrap: wrap;
+    grid-column: 1/13;
+    @media (min-width: 992px) {
+      grid-column: 11/13;
+      justify-content: flex-end;
+    }
+  }
+
+  &__socials svg {
+    & rect {
+      transition: var(--transition-duration) fill ease;
+    }
+
+    @include hover {
+      & rect {
+        fill: white;
+      }
+    }
+  }
+
+  &__info {
+    row-gap: var(--secondary-gap);
+    grid-column: span 12;
+    grid-row: 3/4;
+    justify-items: start;
+    @media (min-width: 992px) {
+      grid-column: 4/13;
+      justify-items: end;
+      grid-row: 2/3;
+    }
+  }
+
+  &__info-link {
+    max-width: 400px;
+  }
+
+  &__logo {
+    grid-column: 1/13;
+    grid-row: 1/2;
+
+    @media (min-width: 992px) {
+      grid-column: 1/3;
+      grid-row: 2/3;
+      align-self: end;
+    }
+  }
+  &__contacts {
+    font-size: 24px;
+    row-gap: 8px;
+
+    @media (min-width: 992px) {
+      justify-items: end;
+    }
+  }
+
+  &__details {
+    color: var(--grey-color);
+    gap: var(--secondary-gap);
+    font-size: 14px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @media (min-width: 992px) {
+      justify-content: flex-end;
+      flex-direction: row;
+    }
+
+  }
+
+  &__details-link {
+    border-bottom: 1px solid transparent;
+    transition: var(--transition-duration) border-bottom ease;
+    align-self: start;
+    max-width: 200px;
+    @include hover {
+      border-bottom: 1px solid var(--grey-color);
+    }
+  }
+}
