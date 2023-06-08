@@ -12,6 +12,7 @@
 
   &__head-item {
     row-gap: var(--extra-small-gap);
+    grid-auto-rows: min-content;
   }
 
   &__head-item p {
