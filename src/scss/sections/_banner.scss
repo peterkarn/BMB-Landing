@@ -1,0 +1,53 @@
+.banner {
+  min-height: 100vh;
+  position: relative;
+  align-items: center;
+  color: var(--white-color);
+  overflow: hidden;
+  padding-bottom: 0;
+  @include adaptiveValue(margin-bottom, 100, 64, 1920, 360, 1);
+
+  &.banner-with-gradient {
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    //   width: 746px;
+    //   height: 100%;
+    //   background: linear-gradient(180deg, rgba(12, 41, 57, 0.75) 0%, rgba(12, 41, 57, 0) 100%);
+    //   transform: rotate(-90deg);
+    //   z-index: 0;
+    // }
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &__inner {
+    min-height: inherit;
+    height: 100%;
+    justify-content: center;
+    row-gap: 32px;
+  }
+
+  &__title {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  &__btn {
+    @media (min-width: 768px) {
+      max-width: 300px;
+    }
+  }
+}
